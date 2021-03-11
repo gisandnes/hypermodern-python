@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "hypermodern_python_gisandnes"
+
+description = "The hypermodern Python project, for gisandnes"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/gisandnes/hypermodern_python_gisandnes"
+repository = "https://github.com/gisandnes/hypermodern_python_gisandnes"
+keywords = ["hypermodern"]
+
+version = "0.1.0"
+# description = ""
+authors = ["Geir Inge Sandnes <geir-inge.sandnes@gjensidige.no>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+coverage = {extras = ["toml"], version = "^5.5"}
+pytest-cov = "^2.11.1"
+
+[tool.poetry.scripts]
+hypermodern_python_gisandnes = "hypermodern_python_gisandnes.console:main"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["hypermodern_python_gisandnes"]
+
+[tool.coverage.report]
+show_missing = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
