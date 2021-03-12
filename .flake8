@@ -1,3 +1,7 @@
 [flake8]
-select = C,E,F,W
-max-complexity = 10
+application-import-names = hypermodern_python_gisandnes,tests
+import-order-style = google
+select = BLK,C,E,F,I,W
+ignore = E203,W503
+max-line-length = 88
+# max-complexity = 10

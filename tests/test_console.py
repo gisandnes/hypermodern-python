@@ -1,6 +1,6 @@
-import requests
 import click.testing
 import pytest
+import requests
 
 from hypermodern_python_gisandnes import console
 
