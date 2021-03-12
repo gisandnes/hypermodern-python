@@ -15,6 +15,7 @@ def mock_wikipedia_random_page(mocker):
     return mocker.patch("hypermodern_python_gisandnes.wikipedia.random_page")
 
 
+# @pytest.mark.skip(reason="Not working after dataclass Page was introduced.")
 @pytest.mark.e2e
 def test_main_succeeds_in_production_env(runner):
     result = runner.invoke(console.main)
