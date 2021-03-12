@@ -1,7 +1,8 @@
 [flake8]
 application-import-names = hypermodern_python_gisandnes,tests
 import-order-style = google
-select = BLK,C,E,F,I,W
-ignore = E203,W503
-max-line-length = 88
+select = B,B9,BLK,C,E,F,I,S,W
+ignore = BLK100,E203,E501,W503
+per-file-ignores = tests/*:S101
+max-line-length = 80
 # max-complexity = 10
