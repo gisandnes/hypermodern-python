@@ -30,6 +30,7 @@ flake8-bugbear = "^21.3.2"
 flake8-import-order = "^0.18.1"
 safety = "^1.10.3"
 mypy = "^0.812"
+pytype = {version = "^2021.3.10", python = "3.7"}
 
 [tool.poetry.scripts]
 hypermodern_python_gisandnes = "hypermodern_python_gisandnes.console:main"
